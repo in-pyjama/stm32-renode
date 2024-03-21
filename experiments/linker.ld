@@ -16,7 +16,7 @@ PROVIDE(_stack_top = ORIGIN(ram) + LENGTH(ram));
 ENTRY(Reset_Handler)
 SECTIONS
 {
-    .vector
+    .vector :
     {
         . = ALIGN(4);
         _svector = .;
